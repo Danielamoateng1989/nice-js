@@ -26,7 +26,7 @@ const Header = () => {
                     {text}
                     </a>
                    </li>
-                    )
+                )
             })}
         </ul>
        </div>
