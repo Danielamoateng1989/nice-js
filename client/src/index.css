@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Raleway:wght@400;500&family=Roboto+Condensed:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 :root {
   /* dark shades of primary color*/
   
@@ -19,7 +19,7 @@ Global Styles
 
 
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Lato', sans-serif;;
 
   background: rgb(244, 252, 255);
   color: rgb(111, 111, 111);
@@ -106,7 +106,7 @@ Navbar
 ===============
 */
 nav {
-  background: white;
+  background: #FBE4D2;
   box-shadow: 0 2px 6px -6px rgb(222, 222, 222);
   
 }
@@ -130,13 +130,15 @@ nav {
 }
 
 .links a {
-  color: rgb(3, 4, 6);
+  color: #690000;
   font-size: 1rem;
+  font-weight: bold;
   text-transform: capitalize;
   letter-spacing: var(--spacing);
   display: flex;
   padding: 0.5rem 1rem;
   transition: all 0.3s linear;
+  background-color: #FBE4D2;
   
 
 }
@@ -194,7 +196,7 @@ nav {
 
 .social-icons a {
   margin: 0 0.5rem;
-  color: #000;
+  color: #690000;
   transition: all 0.3s linear;
   font-size: 1.1rem;
 }
