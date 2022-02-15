@@ -16,6 +16,10 @@ Global Styles
   box-sizing: border-box;
 }
 
+main {
+  min-height: 88vh;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   background: rgb(247, 247, 247);
@@ -202,3 +206,8 @@ nav {
   height: 40px;
 }
 
+/*Footer */
+.center-footer {
+  display: flex;
+  justify-content: center;
+}
