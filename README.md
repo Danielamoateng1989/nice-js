@@ -1,8 +1,8 @@
-# NICE 
+# Nice
 
 Nice is a marketplace booking home service appoinment for haircuts, hairdos, braids, nails.
 
-## RUN ON YOUR MACHINE
+## Test the application
 
 Download this docker image and you call run the app on your local environment for testing.
 
