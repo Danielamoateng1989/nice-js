@@ -16,7 +16,7 @@ return (
 
     <div className="nav-center">
       <div className="nav-header">
-        <img src={logo} alt="Daniel logo"></img>
+        <img src={logo} alt="nicelogo" className="logo"></img>
         <button className="nav-toggle" onClick={() => setShowLinks(!showLinks)}>
           <FaBars />
         </button>
