@@ -1,6 +1,7 @@
 import React from 'react'
 import {FaBars, FaTwitter, FaGithub, FaLinkedin} from 'react-icons/fa'
 import {links} from '../navItems'
+import logo from '../images/NICE.png'
 
 const Header = () => {
    
@@ -8,7 +9,7 @@ const Header = () => {
     <nav>
         <div className="nav-container">
             <div className="nav-header">
-                <img src={} alt="Nice company logo" />
+                <img src={logo} alt="Nice company logo" />
                 <button className="toggle">
                    <FaBars />
                 </button>
