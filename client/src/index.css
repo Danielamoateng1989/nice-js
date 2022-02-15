@@ -16,15 +16,13 @@ Global Styles
   box-sizing: border-box;
 }
 
-
 body {
   font-family: 'Poppins', sans-serif;
-  background: rgb(244, 252, 255);
+  background: rgb(247, 247, 247);
   color: rgb(222, 222, 222);
   line-height: 1.5;
   font-size: 0.875rem;
 }
-
 
 ul {
   list-style-type: none;
