@@ -1,38 +1,46 @@
-import React from 'react'
+import React, { useState} from 'react'
 import {FaBars, FaTwitter, FaGithub, FaLinkedin} from 'react-icons/fa'
-import {links} from '../navItems'
 import logo from '../images/NICE.png'
+import {links} from '../navItems'
 
-const Header = () => {
-   
-  return (
-    <nav>
-        <div className="nav-container">
-            <div className="nav-header">
-                <img src={logo} alt="Nice company logo" />
-                <button className="toggle">
-                   <FaBars />
-                </button>
-            </div>
-        </div>
-        
-        <div className="links-container">
-        <ul className="links">
 
-            {links.map(link => {
-                const {id, text, url} = link
-                return (
-                    <li key={id}>
-                    <a href={url}>
-                    {text}
-                    </a>
-                   </li>
-                )
-            })}
-        </ul>
-       </div>
-      
-       <ul className="social-icons">
+
+const Navbar = () => {
+const [showLinks, setShowLinks] = useState(false)
+
+
+
+return (
+  <React.Fragment>
+  <nav>
+
+    <div className="nav-center">
+      <div className="nav-header">
+        <img src={logo} alt="Daniel logo"></img>
+        <button className="nav-toggle" onClick={() => setShowLinks(!showLinks)}>
+          <FaBars />
+        </button>
+      </div>
+
+    <div className={ `${showLinks ? 'links-container show-container' : 'links-container'} `}>
+     
+     <ul className="links">
+     {links.map(link => {
+         const {id, text,url} = link
+       
+          return (
+          <li key={id}>
+          <a href={url}> 
+              {text}
+            </a>
+          </li>
+          )
+       })} 
+      </ul>
+    </div>
+
+     
+     <ul className="social-icons">
           <li>
             <a href="https://twitter.com/danny_bee3">
              <FaTwitter />
@@ -49,9 +57,18 @@ const Header = () => {
             </a>
           </li>
         </ul>
-    </nav>
+    </div>
+</nav>
+  </React.Fragment>
+  
+   
+
+  
+  
+    
+   
     
   )
 }
 
-export default Header
+export default Navbar
