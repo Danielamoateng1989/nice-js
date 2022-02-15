@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 :root {
   /* dark shades of primary color*/
-  
   --transition: all 0.3s linear;
  
 }
@@ -19,19 +18,17 @@ Global Styles
 
 
 body {
-  font-family: 'Lato', sans-serif;;
-
+  font-family: "Helvetica Neue",Helvetica,Arial;
   background: rgb(244, 252, 255);
-  color: rgb(111, 111, 111);
+  color: rgb(222, 222, 222);
   line-height: 1.5;
   font-size: 0.875rem;
 }
 
-/*This takes care of the ul*/
+
 ul {
   list-style-type: none;
 }
-
 
 a {
   text-decoration: none;
@@ -106,7 +103,7 @@ Navbar
 ===============
 */
 nav {
-  background: #FBE4D2;
+  background: #2871DC;
   box-shadow: 0 2px 6px -6px rgb(222, 222, 222);
   
 }
@@ -118,7 +115,7 @@ nav {
 }
 .nav-toggle {
   font-size: 1.5rem;
-  color: grey;
+  color: rgb(255, 255, 255);
   background: transparent;
   border-color: transparent;
   transition: all 0.3s linear;
@@ -130,15 +127,14 @@ nav {
 }
 
 .links a {
-  color: #690000;
-  font-size: 1rem;
+  color: rgb(255, 255, 255);
+  font-size: 0.8rem;
   font-weight: bold;
   text-transform: capitalize;
   letter-spacing: var(--spacing);
   display: flex;
   padding: 0.5rem 1rem;
   transition: all 0.3s linear;
-  background-color: #FBE4D2;
   
 
 }
@@ -156,7 +152,7 @@ nav {
 }
 .show-container {
   height: 10rem;
-  background: white
+  background: #2871DC;
 }
 @media screen and (min-width: 800px) {
   .nav-center {
@@ -196,13 +192,14 @@ nav {
 
 .social-icons a {
   margin: 0 0.5rem;
-  color: #690000;
+  color: #fff;
   transition: all 0.3s linear;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
 .social-icons a:hover {
-  color: rgb(72, 72, 72);
+  color: rgb(255, 255, 255);
 
 
 }
