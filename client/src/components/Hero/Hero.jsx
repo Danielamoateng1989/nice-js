@@ -9,7 +9,7 @@ import {
   useColorModeValue,
 } from '@chakra-ui/react'
 import * as React from 'react'
-import { FaArrowRight } from 'react-icons/fa'
+
 
 
 export const Hero = () => (
@@ -75,7 +75,7 @@ export const Hero = () => (
               lg: '4',
             }}
           >
-            <Heading size="xl" color={useColorModeValue('blue.500', 'blue.300')}>
+            <Heading size="xl" color={useColorModeValue('red.500', 'red.300')}>
               On-Demand Appointment
             </Heading>
             <Heading size="xl" fontWeight="normal">
