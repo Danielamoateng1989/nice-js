@@ -1,7 +1,8 @@
-import './App.css'
+import './index.css'
 import Footer from './components/Footer'
 import Header from './components/Header'
 import Homepage from './pages/Homepage'
+
 
 const App = () => {
   return (
@@ -9,8 +10,9 @@ const App = () => {
     <>
      <Header />
      <main>
-       
-       <Homepage />
+       <>
+           <Homepage />
+        </>
      </main>
      <Footer />
     </>
