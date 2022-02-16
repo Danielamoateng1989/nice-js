@@ -9,21 +9,19 @@ import {
   Link
 } from "react-router-dom";
 
-
-
 const App = () => {
   return (
     
-    <>
+    <Router>
      <Header />
      <main>
-       <>   
-          
-           <Homepage />
-        </>
+          <Routes>
+           <Route path="/" element={<Homepage />} exact/>
+        
+          </Routes>
      </main>
      <Footer />
-    </>
+    </Router>
   )
 }
 
