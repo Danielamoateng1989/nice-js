@@ -105,7 +105,10 @@ Navbar
 ===============
 */
 nav {
-  background: #fff;
+  background: rgb(252, 252, 252);
+  -webkit-box-shadow: 0 8px 6px -6px rgb(192, 194, 194);
+  -moz-box-shadow: 0 8px 6px -6px rgb(192, 194, 194);
+  box-shadow: 0 8px 6px -6px rgb(236, 238, 238)
  
 }
 .nav-header {
