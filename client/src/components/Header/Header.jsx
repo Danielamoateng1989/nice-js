@@ -7,12 +7,13 @@ import styled from 'styled-components'
 const Button = styled.button`
   font-size: 1em;
   margin: 1em;
-  border-radius: 30px;
   color: white;
+  border-radius: 4px;
   background-color: #E41E53;
   font-weight: bold;
   height: 30px;
   width: 90px;
+  box-shadow: 3px 4px 10px red
     
 `
 const Navbar = () => {
