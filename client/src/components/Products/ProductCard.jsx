@@ -19,9 +19,7 @@ import  FavouriteButton  from './FavoriteButton'
 
 export const ProductCard = (props) => {
   const { product, rootProps } = props
-  const { name, image, price, description, rating, numberOfReviews  } = product
-
-
+  const { name, image, price, rating, numberOfReviews  } = product
   
   return (
     <div className="content">
