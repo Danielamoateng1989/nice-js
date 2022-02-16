@@ -13,12 +13,12 @@ import {
 } from '@chakra-ui/react'
 import * as React from 'react'
 import { Rating } from './Rating'
-import { FavouriteButton } from './FavoriteButton'
-import { PriceTag } from './PriceTag'
+import  FavouriteButton  from './FavoriteButton'
 
- export const ServicesCard = (props) => {
+
+export const ProductCard = (props) => {
   const { product, rootProps } = props
-  const { name, imageUrl, price, salePrice, rating } = product
+  const { name, imageUrl, price, description, rating,  } = product
   return (
     <Stack
       spacing={useBreakpointValue({
@@ -52,7 +52,7 @@ import { PriceTag } from './PriceTag'
           <Text fontWeight="medium" color={useColorModeValue('gray.700', 'gray.400')}>
             {name}
           </Text>
-          <PriceTag price={price} salePrice={salePrice} currency="USD" />
+          {/* <PriceTag price={price} salePrice={salePrice} currency="USD" /> */}
         </Stack>
         <HStack>
           <Rating defaultValue={rating} size="sm" />
@@ -63,17 +63,15 @@ import { PriceTag } from './PriceTag'
       </Stack>
       <Stack align="center">
         <Button colorScheme="blue" isFullWidth>
-          Add to cart
+          Book 
         </Button>
         <Link
           textDecoration="underline"
           fontWeight="medium"
           color={useColorModeValue('gray.600', 'gray.400')}
         >
-          Quick shop
         </Link>
       </Stack>
     </Stack>
   )
 }
-

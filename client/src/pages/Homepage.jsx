@@ -1,17 +1,16 @@
 import React from 'react'
-import {Row, Col} from 'react-bootstrap'
 import { Hero } from '../components/Hero/Hero'
-import Services from '../components/Services/Services'
-import data from '../data'
+import Products from '../components/Products/Products'
 
 
 
 
-const Homepage = () => {
+
+const Homepage = ({product}) => {
   return (
     <>
      <Hero />
-    
+     <Products product={product} />
     </>
   )
 }
