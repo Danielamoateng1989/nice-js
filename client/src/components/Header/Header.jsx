@@ -8,12 +8,8 @@ import {links} from '../../navItems'
 const Navbar = () => {
 const [showLinks, setShowLinks] = useState(false)
 
-
-
 return (
-  <React.Fragment>
-  <nav>
-
+   <nav>
     <div className="nav-center">
       <div className="nav-header">
         <img src={logo} alt="nicelogo" className="logo"></img>
@@ -29,26 +25,19 @@ return (
          const {id, text,url} = link
        
           return (
-          <li key={id}>
+          <div key={id}>
+          <li>
           <a href={url}> 
               {text}
             </a>
           </li>
+          </div>
           )
        })} 
       </ul>
     </div>
     </div>
-</nav>
-  </React.Fragment>
-  
-   
-
-  
-  
-    
-   
-    
+</nav>  
   )
 }
 

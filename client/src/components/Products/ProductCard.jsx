@@ -19,6 +19,9 @@ import  FavouriteButton  from './FavoriteButton'
 export const ProductCard = (props) => {
   const { product, rootProps } = props
   const { name, imageUrl, price, description, rating, numberOfReviews  } = product
+
+
+  
   return (
     <Stack
       spacing={useBreakpointValue({
