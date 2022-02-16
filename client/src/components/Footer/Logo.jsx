@@ -5,9 +5,9 @@ import logo from '../../images/nice.png'
 export const Logo = () => {
  
   return (
-    <>
-    <img src={logo} alt="nice compnay logo" className="nice-logo"/>
-    </>
+    <React.Fragment>
+    <img src={logo} alt="nice compnay logo" className="logo"/>
+    </React.Fragment>
   
   )
 }
