@@ -1,6 +1,6 @@
 import React, { useState} from 'react'
-import {FaBars, FaTwitter, FaGithub, FaLinkedin} from 'react-icons/fa'
-import logo from '../../images/NICE.png'
+import {FaBars} from 'react-icons/fa'
+import logo from '../../images/nice.png'
 import {links} from '../../navItems'
 
 
@@ -38,25 +38,6 @@ return (
        })} 
       </ul>
     </div>
-
-     
-     <ul className="social-icons">
-          <li>
-            <a href="https://twitter.com/danny_bee3">
-             <FaTwitter />
-            </a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/daniel-amoateng-959a27181/">
-             <FaLinkedin />
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/Danielamoateng1989">
-              <FaGithub />
-            </a>
-          </li>
-        </ul>
     </div>
 </nav>
   </React.Fragment>
