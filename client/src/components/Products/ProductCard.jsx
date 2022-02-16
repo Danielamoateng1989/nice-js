@@ -52,7 +52,7 @@ export const ProductCard = (props) => {
           <Text fontWeight="medium" color={useColorModeValue('gray.700', 'gray.400')}>
             {name}
           </Text>
-          {/* <PriceTag price={price} salePrice={salePrice} currency="USD" /> */}
+          {price}
         </Stack>
         <HStack>
           <Rating defaultValue={rating} size="sm" />
@@ -63,7 +63,7 @@ export const ProductCard = (props) => {
       </Stack>
       <Stack align="center">
         <Button colorScheme="blue" isFullWidth>
-          Book 
+          Book Now
         </Button>
         <Link
           textDecoration="underline"

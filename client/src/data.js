@@ -43,7 +43,7 @@ const products = [
   },
   {
 
-    id: 4,
+    id: 5,
     name: 'Men hair braid',
     imageUrl: 'https://previews.dropbox.com/p/thumb/ABcd5_l1ISJ-eUYPTIyXu4pCjAK20LkNjJHBsDR6jzZnRRcnj-ubwM-qkgnl1JrTDqwMNk4Q-KqCW0_7L0AI4oV1xVHK0Ee9VAtFbmCfjdP5zMm8IsIeIoPl1VF1e3wG-k4y2H9CTlOCoKJjDFt3JVXVER8E1BAJF2NDUMxv_yc9Oa18GqlvdkYLPefQJyU4PvyozZOgvd74zg3iCtyhC7VGbiT_VK1LWLX5wNdWRgzbPGDnGhWoJ2qE0G9n9D0diFw4CXaPQwNbhwZLTOxhxnT5BfzQZw7XWS2MMuXJGlrpATKLv-TcXVyqtbTIQLg6QwDBKzApo5h2hAygWxhd4k-_jNzMmIy_vkVVIMvExZiLHw/p.jpeg',
     description:
@@ -53,7 +53,7 @@ const products = [
     numberOfReviews: 8,
   },
   {
-    id: 5,
+    id: 6,
     name: 'Make up with red lipstick',
     imageUrl: 'https://previews.dropbox.com/p/thumb/ABc2egjkcNtx4Y6Pa1iLC5jLs8muLXKFmJwxuNMx65pq-NlxlCq25JGHVsDOmBllGCWawdoQsHgk_WKCLe3zbmTOXvCzRawUaHyTy0ApP0CLeU46Ms5oAKPDn75ssEf5zsT9uBJFkpHInCOJlHVynhsxKudqVRhteKOh2LzxGhulsAsaw5_2l-wxjn9Hjhz_X0YM4GV_IH53blMQ1OoAiMhtuM_cSUjUBdA8mJrBy3MN3Ri6O1gpanCTxOFC1HMGSHN4ExffkDSPNciM_DvJwv6_t1k1q1hjoHqPziumD8lmnlyFywQz1GOd6ZszuVG07BimF1ldWLPMxbv7Olf2pW826pvvgxWjL4kL9NZZ9NblPw/p.jpeg',
     description:
@@ -64,7 +64,7 @@ const products = [
   },
   {
    
-     id: 6,
+     id: 7,
     name: 'White colored nails',
     imageUrl: 'https://previews.dropbox.com/p/thumb/ABeOeDlcBey4xEXfYrL8XROkPNHmzKQF3LuppUKEMYUySreQQrOYK_62BcU_Szktkh8_SXJrp4b4wDG2a1h76tjYcoPypaeF5LE7Q9v8NOaFYSqQeEeHrK4YVu8mOQkq25i__OTbV9HnMs-e47D2kUM__v-kMIkR-18xpZju_iRVuxJdOHgtcXwvFOiEYvSVWAViA2onWM1yo7ntKWjfZ-9zFVkguqFOyi2C9t5g65mOGGvJCpzt_bQwNWXt1RdlemVuTBHTFJH-fv1z6bS3HuShvE7gSJSmFlmqC9fReHq3JRVR2bFSj3ruBe2wTUdVlVrM30SvaSd4aAW0sRmlrEPhJyfQD7yZHrftM2C_IIW3qw/p.jpeg',
     description:
@@ -74,7 +74,7 @@ const products = [
     numberOfReviews: 8,
   },
   {
-    id: 7,
+    id: 8,
     name: 'Mens haircut one',
     imageUrl: 'https://previews.dropbox.com/p/thumb/ABf4ZR9YdDJQ3Wsbfv4b5jEIn2rYsFT-Mqi-yLYQGVG8njaOw6jD8QOq9aZKStqxhwgAQK_mQJ3NAzFNXPlKYbVkKo2SivFlRyOIVATtVilf_453y2E8qJjNks5pPG-QybcuhaujWWzTv847EriFqxEASHc1rEmFNPttfd4tr6LpKLmuNUWcnPyfUlLP_AEKva8gcqBK6szI9KdoY8InTIRxppioXC01ziDzdugnagpEvK-RxC0X9vnbcnJ6kfz04871c_Yfps_neE_08Jstdp5o0-Ilzz1dIcXJVwZL8kRJfF7T6O0grBGWSPOeGdst7az-nCG4nY1wwajDh1zFlCkV6Is8F05VC6htKh55q8orOQ/p.jpeg',
     description:
@@ -84,7 +84,7 @@ const products = [
     numberOfReviews: 8,
   },
   {
-    id: 8,
+    id: 9,
     name: 'Colored nails for women',
     imageUrl: 'https://previews.dropbox.com/p/thumb/ABfngDIK4SwGLSbvf6Rn8N4bE2xnYKHlNrGm7B5WuNzFMTFImiaPpL5EqVHMben7HMDK1FM9MaqISSwtgsVt1w5McXA8Hx-d0AwrhUJwaTKaF7HjjVSNztjZXRk6smVQxf-A9Pm-T0OcM_99RyYi-WvyCKUipst-xdChEngx5Kq72q5vyWakAbYyrbEmFyexhIC0foNJiujsPxby_Og7XVMYmJO7ilySBHgfsU-mTZkjjZ95pp1zz63oqvYnv1qVNh1NgDesFGzzlKGnf-Xk52ergs38YdECqP-HKwy15x6s6AXeiYLY_UI6pcD4UiWY7pWZfUirf7KnZaLF0uMGf2rvANC-Erog-CAaCM2q-GiWlA/p.jpeg',
     description:
@@ -92,17 +92,6 @@ const products = [
     price: 35.00,
     rating: 4.0,
     numberOfReviews: 51,
-  },
-  {
-
-    id: 9,
-    name: 'black and brown nails',
-    imageUrlUrl: 'https://previews.dropbox.com/p/thumb/ABc2egjkcNtx4Y6Pa1iLC5jLs8muLXKFmJwxuNMx65pq-NlxlCq25JGHVsDOmBllGCWawdoQsHgk_WKCLe3zbmTOXvCzRawUaHyTy0ApP0CLeU46Ms5oAKPDn75ssEf5zsT9uBJFkpHInCOJlHVynhsxKudqVRhteKOh2LzxGhulsAsaw5_2l-wxjn9Hjhz_X0YM4GV_IH53blMQ1OoAiMhtuM_cSUjUBdA8mJrBy3MN3Ri6O1gpanCTxOFC1HMGSHN4ExffkDSPNciM_DvJwv6_t1k1q1hjoHqPziumD8lmnlyFywQz1GOd6ZszuVG07BimF1ldWLPMxbv7Olf2pW826pvvgxWjL4kL9NZZ9NblPw/p.jpeg',
-    description:
-      'This is a black and brown nails. We can come over to your hour and get you this service',
-    price: 60.00,
-    rating: 4.0,
-    numberOfReviews: 5,
   },
   {
     id: 10,
