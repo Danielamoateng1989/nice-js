@@ -14,16 +14,16 @@ import {
 import * as React from 'react'
 import { Rating } from './Rating'
 import  FavouriteButton  from './FavoriteButton'
+import { AnimateSharedLayout } from "framer-motion"
 
 
 export const ProductCard = (props) => {
   const { product, rootProps } = props
-  const { name, imageUrl, price, description, rating, numberOfReviews  } = product
+  const { name, image, price, description, rating, numberOfReviews  } = product
 
 
   
   return (
-
     <div className="content">
     <Stack
       spacing={useBreakpointValue({
@@ -34,8 +34,9 @@ export const ProductCard = (props) => {
     >
       <Box position="relative">
         <AspectRatio ratio={4 / 3}>
+       
           <Image
-            src={imageUrl}
+            src={image}
             alt={name}
             draggable="false"
             fallback={<Skeleton />}
@@ -46,7 +47,7 @@ export const ProductCard = (props) => {
             objectFit="cover"
           />
         </AspectRatio>
-        <FavouriteButton
+       <FavouriteButton
           position="absolute"
           top="4"
           right="4"
