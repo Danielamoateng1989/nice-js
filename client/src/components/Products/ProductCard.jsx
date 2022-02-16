@@ -16,10 +16,15 @@ import { Rating } from './Rating'
 import  FavouriteButton  from './FavoriteButton'
 
 
+
 export const ProductCard = (props) => {
   const { product, rootProps } = props
-  const { name, imageUrl, price, description, rating, numberOfReviews  } = product
+  const { name, image, price, description, rating, numberOfReviews  } = product
+
+
+  
   return (
+    <div className="content">
     <Stack
       spacing={useBreakpointValue({
         base: '2',
@@ -29,8 +34,9 @@ export const ProductCard = (props) => {
     >
       <Box position="relative">
         <AspectRatio ratio={4 / 3}>
+       
           <Image
-            src={imageUrl}
+            src={image}
             alt={name}
             draggable="false"
             fallback={<Skeleton />}
@@ -38,9 +44,10 @@ export const ProductCard = (props) => {
               base: 'md',
               md: 'xl',
             })}
+            objectFit="cover"
           />
         </AspectRatio>
-        <FavouriteButton
+       <FavouriteButton
           position="absolute"
           top="4"
           right="4"
@@ -49,19 +56,24 @@ export const ProductCard = (props) => {
       </Box>
       <Stack>
         <Stack spacing="1">
-          <Text fontWeight="medium" color={useColorModeValue('gray.700', 'gray.400')}>
+          <Text fontWeight="md" fontSize="md" color={"gray"}>
             {name}
           </Text>
           {price}
         </Stack>
         <HStack>
+          <Text fontSize="xl" color={"black"} fontWeight="bold">
+            ${price} 
+          </Text>
+        </HStack>
+         <HStack>
           <Rating defaultValue={rating} size="sm" />
-          <Text fontSize="sm" color={useColorModeValue('gray.600', 'gray.400')}>
+          <Text fontSize="sm" color={useColorModeValue('gray.600', 'gray.400') }>
             {numberOfReviews} reviews
           </Text>
         </HStack>
       </Stack>
-      <Stack align="center">
+      {/* <Stack align="center">
         <Button backgroundColor={"#2871DC"} color={"white"} isFullWidth>
           Book Now
         </Button>
@@ -71,7 +83,8 @@ export const ProductCard = (props) => {
           color={useColorModeValue('gray.600', 'gray.400')}
         >
         </Link>
-      </Stack>
+      </Stack> */}
     </Stack>
+    </div>
   )
 }

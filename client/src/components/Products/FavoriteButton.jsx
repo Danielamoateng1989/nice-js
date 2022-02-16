@@ -7,20 +7,25 @@ const FavoriteButton = (props) => (
     <IconButton
       isRound
       bg="white"
-      color="gray.900"
+      color=""
+      border="none"
+      borderColor= 'white'
       size="sm"
       _hover={{
         transform: 'scale(1.1)',
+       
       }}
       sx={{
         ':hover > svg': {
           transform: 'scale(1.1)',
+           
         },
       }}
       transition="all 0.15s ease"
       icon={<Icon as={FiHeart} transition="all 0.15s ease" />}
-      boxShadow="base"
+      boxShadow="inner"
       {...props}
+      
     />
   </LightMode>
 )

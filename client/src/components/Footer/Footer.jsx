@@ -5,6 +5,8 @@ import { Logo } from './Logo'
 import { SocialMediaLinks } from './SocialMediaLinks'
 
  const Footer = () => (
+
+  <footer style={{backgroundColor: '#F7F7F7'}}>
   <Box
     as="footer"
     role="contentinfo"
@@ -15,6 +17,7 @@ import { SocialMediaLinks } from './SocialMediaLinks'
       base: '4',
       md: '8',
     }}
+    bg="#F7F7F7"
   >
     <Stack>
       <Stack direction="row" spacing="4" align="center" justify="space-between">
@@ -29,6 +32,7 @@ import { SocialMediaLinks } from './SocialMediaLinks'
       />
     </Stack>
   </Box>
+  </footer>
 )
 
 export default Footer

@@ -1,15 +1,12 @@
 import {
   Box,
   Flex,
-  Heading,
- Image,
-
+  Image,
   Skeleton,
   Stack,
   useColorModeValue,
 } from '@chakra-ui/react'
 import * as React from 'react'
-
 
 
 export const Hero = () => (
@@ -44,7 +41,7 @@ export const Hero = () => (
           lg: 'none',
         }}
         bg={{
-          base: useColorModeValue('red.50', 'gray.700'),
+          base: useColorModeValue('gray.50', 'gray.700'),
           lg: 'transparent',
         }}
         mx={{
@@ -75,27 +72,27 @@ export const Hero = () => (
               lg: '4',
             }}
           >
-            <Heading size="xl" color={useColorModeValue('red.500', 'red.300')}>
-              On-Demand Appointment
-            </Heading>
-            <Heading size="xl" fontWeight="normal">
-              Book an appointment with a Nice professional and receive a service at your doorstep
-            </Heading>
+            <h1 size="xl" color={"black"} className="hero-heading">
+              Appointments, Delivered!
+            </h1>
+            <p size="xl" fontWeight="normal" className="hero-paragraph">
+              Book an appointment with a professional from <span>nice.com</span> and receive a hair, nails, makeup services at the comfort of your home
+            </p>
           </Stack>
         </Stack>
       </Box>
       <Flex flex="1" overflow="hidden">
         <Image
           src="https://images.unsplash.com/photo-1629397685944-7073f5589754?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-         alt="Lovely Image"
+          alt="Lovely Image"
           fallback={<Skeleton />}
           maxH="450px"
           minW="300px"
           objectFit="cover"
           flex="1"
-        />
-        
-      </Flex>
+          borderRadius="15"
+          />
+         </Flex>
     </Stack>
   </Box>
 );
