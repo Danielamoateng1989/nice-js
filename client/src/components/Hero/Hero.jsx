@@ -75,12 +75,12 @@ export const Hero = () => (
               lg: '4',
             }}
           >
-            <Heading size="xl" color={useColorModeValue('red.500', 'red.300')}>
+            <Heading size="xl" color={"blac"}>
               On-Demand Appointment
             </Heading>
-            <Heading size="xl" fontWeight="normal">
+            <p size="xl" fontWeight="normal" className="hero-paragraph">
               Book an appointment with a Nice professional and receive a service at your doorstep
-            </Heading>
+            </p>
           </Stack>
         </Stack>
       </Box>
