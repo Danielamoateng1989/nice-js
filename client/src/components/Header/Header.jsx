@@ -7,7 +7,6 @@ import {links} from '../../navItems'
 
 const Navbar = () => {
 const [showLinks, setShowLinks] = useState(false)
-
 return (
    <nav>
     <div className="nav-center">

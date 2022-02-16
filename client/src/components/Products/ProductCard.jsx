@@ -58,6 +58,11 @@ export const ProductCard = (props) => {
           {price}
         </Stack>
         <HStack>
+          <Text fontSize="xl" color={"black"} fontWeight="bold">
+            ${price} 
+          </Text>
+        </HStack>
+         <HStack>
           <Rating defaultValue={rating} size="sm" />
           <Text fontSize="sm" color={useColorModeValue('gray.600', 'gray.400')}>
             {numberOfReviews} reviews

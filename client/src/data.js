@@ -5,7 +5,7 @@ const products = [
     imageUrl: 'https://previews.dropbox.com/p/thumb/ABcuJp8zEHvCckE4JD1M_vVee9y_uimyB_HZ_O_Ez7mz8cFLTgXnfauEwM-C5tk6jCqbYEmPGOXwZR3JGvE3_4bPracirL3LjsjKsovNuVfBAXMPJ2L1Kv22UEPTG45Zfhqh1aGenIi60zAHrsDxo-LUkr_qGg8UQGbxt2-_76PcO455oohaoNwRntiGk2RjLXMSsuErpuwbhRUDcMM4xZlrp6uijLOhrcRLO5q9-tO8o2dcjQwNSGSQvz4H3wOUi3sw2Jmz_65KKJVa-vvZ9nGNqjcKD_3BcSr2LGtYL9D3ic5gLQptTdTizIbFxvrtPdzDwgTqsrwS1MBiNIAm99AE2jFSRgEtgvNXoGwsPM_wyw/p.jpeg',
     description:
       'A haircut that looks so good, you will like to do it every day. This looks come at cheap too',
-    price: 80.99,
+    price: 80,
     rating: 4.5,
     numberOfReviews: 2,
   },
@@ -15,7 +15,7 @@ const products = [
     imageUrl: 'https://previews.dropbox.com/p/thumb/ABdFk8ew23ar9dEHb_t6jDLJA_rBuOjGaw2BMjUD8M4760cYK9znZPACjuan9G9Bia9XPctA5hdSE8f9Aq_4jRJFpFoJ8W2pIKFk7MYa6JxHKUGjzL911vjxH9m4qDJLyhDkpH7XwiA3XsVOTjPpnAMM6U7sVw2bNqQswbYa1ahta-TX5ZFPK-i5TJ-GY2e71Ng-xhHymJLX2wk47Bcbr4uP6qrFtPYnhpvGp70dGXGIkd5oTBiBz2OVhjj-Wdl_e-bOwGUE3WCqb8QzRDEeB81jS4p8SbvQk76nF513U4nfVSl-kOYGXL_2LsaKhnVLyf3CPSffnATecmh6Bjaru4zAOAUPVT--TQUHVFJmpRSf2w/p.jpeg',
     description:
       'This look is suited for young men with style. Get if for your boy',
-    price: 30.55,
+    price: 30,
     rating: 4.0,
     numberOfReviews: 8,
   },
