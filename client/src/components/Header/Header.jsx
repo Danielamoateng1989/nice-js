@@ -2,9 +2,19 @@ import React, { useState} from 'react'
 import {FaBars} from 'react-icons/fa'
 import logo from '../../images/nice.png'
 import {links} from '../../navItems'
+import styled from 'styled-components'
 
-
-
+const Button = styled.button`
+  font-size: 1.3em;
+  margin: 1em;
+  padding: 0.25em 1em;
+  border-radius: 20px;
+  color: white;
+  background-color: #E41E53;
+  font-weight: bold;
+  
+  
+`
 
 const Navbar = () => {
 const [showLinks, setShowLinks] = useState(false)
@@ -36,7 +46,9 @@ return (
           )
        })} 
       </ul>
+      
     </div>
+    <Button>Login</Button>
     </div>
 </nav>  
 
