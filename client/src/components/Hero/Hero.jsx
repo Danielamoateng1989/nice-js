@@ -75,9 +75,9 @@ export const Hero = () => (
               lg: '4',
             }}
           >
-            <Heading size="xl" color={"black"}>
+            <h1 size="xl" color={"black"} className="hero-heading">
               On-Demand Appointment
-            </Heading>
+            </h1>
             <p size="xl" fontWeight="normal" className="hero-paragraph">
               Book an appointment with a Nice professional and receive a service at your doorstep
             </p>
@@ -87,12 +87,14 @@ export const Hero = () => (
       <Flex flex="1" overflow="hidden">
         <Image
           src="https://images.unsplash.com/photo-1629397685944-7073f5589754?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-         alt="Lovely Image"
+          alt="Lovely Image"
           fallback={<Skeleton />}
           maxH="450px"
           minW="300px"
           objectFit="cover"
           flex="1"
+          borderRadius="5"
+
         />
         
       </Flex>

@@ -212,4 +212,11 @@ nav {
 
 /* Hero */
 
+.hero-paragraph {
+  font-size: 1.5rem;
+}
 
+.hero-heading {
+  font-size: 3.5rem;
+  font-weight: bold;
+}
