@@ -2,6 +2,13 @@ import './index.css'
 import Footer from './components/Footer/Footer'
 import Header from './components/Header/Header'
 import Homepage from './pages/Homepage'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+
 
 
 const App = () => {
