@@ -2,17 +2,15 @@ import {
   Box,
   Flex,
   Heading,
-  HStack,
-  Icon,
-  Image,
-  Link,
+ Image,
+
   Skeleton,
   Stack,
   useColorModeValue,
 } from '@chakra-ui/react'
 import * as React from 'react'
 import { FaArrowRight } from 'react-icons/fa'
-import HeroImage from '../images/heroImage.jpg'
+
 
 export const Hero = () => (
   <Box

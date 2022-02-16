@@ -1,7 +1,7 @@
 import React from 'react'
 import {Row, Col} from 'react-bootstrap'
-import { Hero } from '../components/hero'
-import Services from '../components/Service'
+import { Hero } from '../components/Hero/Hero'
+import Services from '../components/Services/Service'
 import data from '../data'
 
 

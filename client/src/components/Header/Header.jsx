@@ -1,7 +1,7 @@
 import React, { useState} from 'react'
 import {FaBars, FaTwitter, FaGithub, FaLinkedin} from 'react-icons/fa'
-import logo from '../images/NICE.png'
-import {links} from '../navItems'
+import logo from '../../images/NICE.png'
+import {links} from '../../navItems'
 
 
 
