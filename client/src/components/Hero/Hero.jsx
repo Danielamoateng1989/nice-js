@@ -1,15 +1,12 @@
 import {
   Box,
   Flex,
-  Heading,
- Image,
-
+  Image,
   Skeleton,
   Stack,
   useColorModeValue,
 } from '@chakra-ui/react'
 import * as React from 'react'
-
 
 
 export const Hero = () => (
@@ -44,7 +41,7 @@ export const Hero = () => (
           lg: 'none',
         }}
         bg={{
-          base: useColorModeValue('red.50', 'gray.700'),
+          base: useColorModeValue('gray.50', 'gray.700'),
           lg: 'transparent',
         }}
         mx={{
@@ -93,11 +90,9 @@ export const Hero = () => (
           minW="300px"
           objectFit="cover"
           flex="1"
-          borderRadius="5"
-
-        />
-        
-      </Flex>
+          borderRadius="15"
+          />
+         </Flex>
     </Stack>
   </Box>
 );
