@@ -8,6 +8,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import Servicespage from './pages/Servicespage'
 
 const App = () => {
   return (
@@ -17,7 +18,7 @@ const App = () => {
      <main>
           <Routes>
            <Route path="/" element={<Homepage />} exact/>
-        
+           <Route path="/service/:id" element={<Servicespage />}/>
           </Routes>
      </main>
      <Footer />

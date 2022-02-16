@@ -21,7 +21,7 @@ export const ProductCard = (props) => {
   
   return (
     <div className="content">
-    <Link to="/products">
+    <Link to={`/service/${product.id}`}>
     <Stack
       spacing={useBreakpointValue({
         base: '2',
