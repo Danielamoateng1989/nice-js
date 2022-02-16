@@ -62,7 +62,7 @@ export const ProductCard = (props) => {
         </HStack>
       </Stack>
       <Stack align="center">
-        <Button colorScheme="blue" isFullWidth>
+        <Button backgroundColor={"#2871DC"} color={"white"} isFullWidth>
           Book Now
         </Button>
         <Link

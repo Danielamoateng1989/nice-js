@@ -90,7 +90,7 @@ const products = [
     description:
       'This is a rainbow nails for women. It looks really neat. ',
     price: 35.00,
-    rating: 4.0,
+    rating: 4.5,
     numberOfReviews: 51,
   },
   {
