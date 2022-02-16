@@ -21,7 +21,7 @@ const Services = () => (
   >
     <ServiceGrid>
       {services.map((service) => (
-        <ServiceCard key={service.id} service={service} />
+        <ServicesCard key={service.id} service={service} />
       ))}
     </ServiceGrid>
   </Box>
