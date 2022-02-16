@@ -15,8 +15,6 @@ import * as React from 'react'
 import { Rating } from './Rating'
 import  FavouriteButton  from './FavoriteButton'
 
-
-
 export const ProductCard = (props) => {
   const { product, rootProps } = props
   const { name, image, price, rating, numberOfReviews  } = product
