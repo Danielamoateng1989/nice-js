@@ -4,7 +4,7 @@ import Header from './components/Header/Header'
 import Homepage from './pages/Homepage'
 import {
   BrowserRouter as Router,
-  Switch,
+  Routes,
   Route,
   Link
 } from "react-router-dom";
