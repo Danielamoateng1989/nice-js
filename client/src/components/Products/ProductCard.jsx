@@ -14,7 +14,7 @@ import {
 import * as React from 'react'
 import { Rating } from './Rating'
 import  FavouriteButton  from './FavoriteButton'
-import { AnimateSharedLayout } from "framer-motion"
+
 
 
 export const ProductCard = (props) => {
