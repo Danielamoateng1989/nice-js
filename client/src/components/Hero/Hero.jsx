@@ -76,10 +76,10 @@ export const Hero = () => (
             }}
           >
             <h1 size="xl" color={"black"} className="hero-heading">
-              On-Demand Appointment
+              Appointments, Delivered!
             </h1>
             <p size="xl" fontWeight="normal" className="hero-paragraph">
-              Book an appointment with a Nice professional and receive a service at your doorstep
+              Book an appointment with a professional from <span>nice.com</span> and receive a hair, nails, makeup services at the comfort of your home
             </p>
           </Stack>
         </Stack>
