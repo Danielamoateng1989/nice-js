@@ -4,7 +4,6 @@ import {
   Button,
   HStack,
   Image,
-  Link,
   Skeleton,
   Stack,
   Text,
@@ -14,6 +13,7 @@ import {
 import * as React from 'react'
 import { Rating } from './Rating'
 import  FavouriteButton  from './FavoriteButton'
+import {Link} from 'react-router-dom'
 
 export const ProductCard = (props) => {
   const { product, rootProps } = props
@@ -21,6 +21,7 @@ export const ProductCard = (props) => {
   
   return (
     <div className="content">
+    <Link to="/products">
     <Stack
       spacing={useBreakpointValue({
         base: '2',
@@ -81,6 +82,7 @@ export const ProductCard = (props) => {
         </Link>
       </Stack> */}
     </Stack>
+    </Link>
     </div>
   )
 }
