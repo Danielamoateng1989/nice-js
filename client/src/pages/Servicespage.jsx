@@ -1,8 +1,13 @@
 import React from 'react'
+import ProductDetails from '../components/ProductDetails/ProductDetails'
 
-const Servicespage = () => {
+const Servicespage = ({product}) => {
   return (
-    <div>Servicespage</div>
+    <React.Fragment>
+
+    <ProductDetails product={product}/>
+
+    </React.Fragment>
   )
 }
 
