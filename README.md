@@ -1,6 +1,6 @@
 # Nice
 
-Nice is a marketplace booking home service appoinment for haircuts, hairdos, braids, nails.
+Book an appointment with a professional from nice.com and receive a hair, nails, makeup services at the comfort of your home
 
 ## Test the application
 
@@ -19,9 +19,7 @@ docker run node-docker
 ```
 
 ## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
+Coming soon
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
