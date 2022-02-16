@@ -52,7 +52,7 @@ export const ProductCard = (props) => {
       </Box>
       <Stack>
         <Stack spacing="1">
-          <Text fontWeight="medium" color={useColorModeValue('gray.700', 'gray.400')}>
+          <Text fontWeight="bold" fontSize="md" color={"gray"}>
             {name}
           </Text>
           {price}
@@ -69,7 +69,7 @@ export const ProductCard = (props) => {
           </Text>
         </HStack>
       </Stack>
-      <Stack align="center">
+      {/* <Stack align="center">
         <Button backgroundColor={"#2871DC"} color={"white"} isFullWidth>
           Book Now
         </Button>
@@ -79,7 +79,7 @@ export const ProductCard = (props) => {
           color={useColorModeValue('gray.600', 'gray.400')}
         >
         </Link>
-      </Stack>
+      </Stack> */}
     </Stack>
   )
 }
