@@ -67,7 +67,7 @@ export const ProductCard = (props) => {
          <HStack>
           <Rating defaultValue={rating} size="sm" />
           <Text fontSize="sm" color={useColorModeValue('gray.600', 'gray.400') }>
-            {numberOfReviews} reviews
+            ({numberOfReviews} reviews)
           </Text>
         </HStack>
       </Stack>

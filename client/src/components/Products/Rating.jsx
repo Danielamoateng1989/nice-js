@@ -5,7 +5,7 @@ import { FaStar } from 'react-icons/fa'
 export const Rating = (props) => {
   const { defaultValue = 0, max = 5, size = 'md', rootProps } = props
   const color = useColorModeValue('gray.300', 'gray.600')
-  const activeColor = useColorModeValue('black.500', 'black.200')
+  
   return (
     <HStack spacing="0.5" {...rootProps}>
       {Array.from({
@@ -17,7 +17,7 @@ export const Rating = (props) => {
             key={index}
             as={FaStar}
             fontSize={size}
-            color={index <= defaultValue ? activeColor : color}
+            color={index <= defaultValue ? "#F5385D" : color}
           />
         ))}
     </HStack>
