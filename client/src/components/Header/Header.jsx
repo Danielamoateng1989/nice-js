@@ -3,6 +3,7 @@ import {FaBars} from 'react-icons/fa'
 import logo from '../../images/nice.png'
 import {links} from '../../navItems'
 import styled from 'styled-components'
+import {Link } from "react-router-dom"
 
 const Button = styled.button`
   font-size: 1em;
@@ -23,7 +24,9 @@ return (
    <nav>
     <div className="nav-center">
       <div className="nav-header">
+        <Link to="/">
         <img src={logo} alt="nicelogo" className="logo"></img>
+        </Link>
         <button className="nav-toggle" onClick={() => setShowLinks(!showLinks)}>
           <FaBars />
         </button>

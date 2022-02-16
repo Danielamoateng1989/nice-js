@@ -1,21 +1,17 @@
  export const links = [
+  
     { 
         id: 1,
-        url: '/',
-        text: 'home'
-    },
-    { 
-        id: 2,
         url: '/hair',
         text: 'Hair'
     },
     { 
-        id: 3,
+        id: 2,
         url: '/haircuts',
         text: 'Haircuts'
     },
     { 
-        id: 4,
+        id: 3,
         url: '/nails',
         text: 'Nails'
     },
