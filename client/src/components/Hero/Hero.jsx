@@ -75,7 +75,7 @@ export const Hero = () => (
               lg: '4',
             }}
           >
-            <Heading size="xl" color={"blac"}>
+            <Heading size="xl" color={"black"}>
               On-Demand Appointment
             </Heading>
             <p size="xl" fontWeight="normal" className="hero-paragraph">
