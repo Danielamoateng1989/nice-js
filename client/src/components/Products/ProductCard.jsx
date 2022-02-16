@@ -43,6 +43,7 @@ export const ProductCard = (props) => {
               base: 'md',
               md: 'xl',
             })}
+            objectFit="cover"
           />
         </AspectRatio>
         <FavouriteButton
@@ -54,7 +55,7 @@ export const ProductCard = (props) => {
       </Box>
       <Stack>
         <Stack spacing="1">
-          <Text fontWeight="bold" fontSize="md" color={"gray"}>
+          <Text fontWeight="md" fontSize="md" color={"gray"}>
             {name}
           </Text>
           {price}
