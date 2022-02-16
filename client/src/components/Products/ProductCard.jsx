@@ -18,12 +18,12 @@ import  FavouriteButton  from './FavoriteButton'
 
 export const ProductCard = (props) => {
   const { product, rootProps } = props
-  const { name, imageUrl, price, description, rating,  } = product
+  const { name, imageUrl, price, description, rating, numberOfReviews  } = product
   return (
     <Stack
       spacing={useBreakpointValue({
-        base: '4',
-        md: '5',
+        base: '2',
+        md: '3',
       })}
       {...rootProps}
     >
@@ -57,7 +57,7 @@ export const ProductCard = (props) => {
         <HStack>
           <Rating defaultValue={rating} size="sm" />
           <Text fontSize="sm" color={useColorModeValue('gray.600', 'gray.400')}>
-            12 Reviews
+            {numberOfReviews} reviews
           </Text>
         </HStack>
       </Stack>
