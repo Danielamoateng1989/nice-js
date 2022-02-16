@@ -7,15 +7,14 @@ import styled from 'styled-components'
 const Button = styled.button`
   font-size: 1em;
   margin: 1em;
-  border-radius: 50px;
+  border-radius: 30px;
   color: white;
   background-color: #E41E53;
   font-weight: bold;
-  height: 38px;
+  height: 30px;
   width: 90px;
     
 `
-
 const Navbar = () => {
 const [showLinks, setShowLinks] = useState(false)
 return (
