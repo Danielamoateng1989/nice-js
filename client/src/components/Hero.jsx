@@ -84,12 +84,6 @@ export const Hero = () => (
               Book an appointment with a Nice professional and receive a service at your doorstep
             </Heading>
           </Stack>
-          <HStack spacing="3">
-            <Link color={useColorModeValue('black.500', 'black.300')} fontWeight="bold" fontSize="lg">
-              Learn more
-            </Link>
-            <Icon color={useColorModeValue('black.500', 'black.300')} as={FaArrowRight} />
-          </HStack>
         </Stack>
       </Box>
       <Flex flex="1" overflow="hidden">
