@@ -8,7 +8,7 @@ import {
   Text,
     useColorModeValue,
 } from '@chakra-ui/react'
-import * as React from 'react'
+import  React, {useState, useEffect} from 'react'
 import products  from "../data"
 import {useLocation} from 'react-router-dom'
 import { Rating } from '../components/Products/Rating'
@@ -28,6 +28,8 @@ const Button = styled.button`
     
 `
 const Servicespage = () => {
+
+  
  
 const location = useLocation()
 const path = location.pathname.split("/")[2]
