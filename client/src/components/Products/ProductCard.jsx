@@ -1,10 +1,8 @@
 import {
   AspectRatio,
   Box,
-  Button,
   HStack,
   Image,
-  Link,
   Skeleton,
   Stack,
   Text,
@@ -13,18 +11,16 @@ import {
 } from '@chakra-ui/react'
 import * as React from 'react'
 import { Rating } from './Rating'
-import  FavouriteButton  from './FavoriteButton'
-
-
+import  FavoriteButton  from './FavoriteButton'
+import {Link} from 'react-router-dom'
 
 export const ProductCard = (props) => {
   const { product, rootProps } = props
-  const { name, image, price, description, rating, numberOfReviews  } = product
-
-
+  const { name, image, price, rating, numberOfReviews  } = product
   
   return (
     <div className="content">
+    <Link to={`/service/${product.id}`}>
     <Stack
       spacing={useBreakpointValue({
         base: '2',
@@ -47,7 +43,7 @@ export const ProductCard = (props) => {
             objectFit="cover"
           />
         </AspectRatio>
-       <FavouriteButton
+       <FavoriteButton
           position="absolute"
           top="4"
           right="4"
@@ -69,22 +65,12 @@ export const ProductCard = (props) => {
          <HStack>
           <Rating defaultValue={rating} size="sm" />
           <Text fontSize="sm" color={useColorModeValue('gray.600', 'gray.400') }>
-            {numberOfReviews} reviews
+            ({numberOfReviews} reviews)
           </Text>
         </HStack>
       </Stack>
-      {/* <Stack align="center">
-        <Button backgroundColor={"#2871DC"} color={"white"} isFullWidth>
-          Book Now
-        </Button>
-        <Link
-          textDecoration="underline"
-          fontWeight="medium"
-          color={useColorModeValue('gray.600', 'gray.400')}
-        >
-        </Link>
-      </Stack> */}
     </Stack>
+    </Link>
     </div>
   )
 }
