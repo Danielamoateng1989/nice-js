@@ -1,5 +1,5 @@
 import { Box } from '@chakra-ui/react'
-import * as React from 'react'
+import  React, {useState, useEffect} from 'react'
 import { ProductCard } from './ProductCard'
 import  products  from '../../data'
 import { ProductGrid } from './ProductGrid'
@@ -7,6 +7,9 @@ import axios from 'axios'
 
 
  const Products = () => (
+
+
+  const []
   <Box
     maxW="7xl"
     mx="auto"
