@@ -1,6 +1,21 @@
-import React from 'react'
+import * as React from 'react'
 import products  from "../data"
 import {useLocation} from 'react-router-dom'
+import {
+  AspectRatio,
+  Box,
+  HStack,
+  Image,
+  Skeleton,
+  Stack,
+  Text,
+  useBreakpointValue,
+  useColorModeValue,
+  Button
+} from '@chakra-ui/react'
+import { Rating } from '../components/Products/Rating'
+import  FavoriteButton  from '../components/Products/FavoriteButton'
+import { Link } from 'react-router-dom'
 
 const Servicespage = () => {
 
@@ -14,16 +29,62 @@ const Servicespage = () => {
 
   const product = products.find(p => p.id.toString() === path)
   return (
-    <React.Fragment>
+    <div className="content">
+   <Stack
+      spacing={useBreakpointValue({
+        base: '2',
+        md: '3',
+      })}
+      
+    > 
+     <Box position="relative">
+        <AspectRatio ratio={4 / 3}>
+       
+          <Image
+            src={product.image}
+            alt={product.name}
+            draggable="false"
+            fallback={<Skeleton />}
+            borderRadius={useBreakpointValue({
+              base: 'md',
+              md: 'xl',
+            })}
+            objectFit="cover"
+          />
+        </AspectRatio>
+       <FavoriteButton
+          position="absolute"
+          top="4"
+          right="4"
+          aria-label={`Add ${product.name} to your favourites`}
+        />
+      </Box>
+      <Stack>
+        <Stack spacing="1">
+          <Text fontWeight="md" fontSize="md" color={"gray"}>
+            {product.name}
+          </Text>
+          {product.price}
+        </Stack>
+        <HStack>
+          <Text fontSize="xl" color={"black"} fontWeight="bold">
+            ${product.price} 
+          </Text>
+        </HStack>
+         <HStack>
+          <Rating defaultValue={product.rating} size="sm" />
+          <Text fontSize="sm" color={useColorModeValue('gray.600', 'gray.400') }>
+            ({product.numberOfReviews} reviews)
+          </Text>
+          
+        </HStack>
+         <Button>Book Now</Button>
+        </Stack>
+      </Stack>
+     </div>
+     
 
-      <h1>{product.name}</h1>
-      <img src={product.image} />
-      <h1>{product.description}</h1>
-      <h1>{product.price}</h1>
-      <h1>{product.rating} {product.numberOfReviews} reviews</h1>
-      <button>Book Now</button>
-
-    </React.Fragment>
+    
   )
 }
 

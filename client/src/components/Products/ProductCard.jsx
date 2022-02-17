@@ -1,7 +1,6 @@
 import {
   AspectRatio,
   Box,
-  Button,
   HStack,
   Image,
   Skeleton,
@@ -12,7 +11,7 @@ import {
 } from '@chakra-ui/react'
 import * as React from 'react'
 import { Rating } from './Rating'
-import  FavouriteButton  from './FavoriteButton'
+import  FavoriteButton  from './FavoriteButton'
 import {Link} from 'react-router-dom'
 
 export const ProductCard = (props) => {
@@ -44,7 +43,7 @@ export const ProductCard = (props) => {
             objectFit="cover"
           />
         </AspectRatio>
-       <FavouriteButton
+       <FavoriteButton
           position="absolute"
           top="4"
           right="4"
