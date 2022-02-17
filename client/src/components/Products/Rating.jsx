@@ -4,7 +4,7 @@ import { FaStar } from 'react-icons/fa'
 
 
 export const Rating = (props) => {
-  const { defaultValue = 0, max = 1,  size = 'md', rootProps } = props
+  const { defaultValue = 0, max = 5,  size = 'md', rootProps } = props
   const color = useColorModeValue('gray.300', 'gray.600')
   
   return (
