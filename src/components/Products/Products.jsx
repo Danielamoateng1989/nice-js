@@ -6,10 +6,14 @@ import { ProductGrid } from './ProductGrid'
 import axios from 'axios'
 
 
- const Products = () => (
+ const Products = () => {
+   
+  const [products, setProducts] = useState([])
+  
 
 
-  const []
+
+  return(
   <Box
     maxW="7xl"
     mx="auto"
@@ -30,6 +34,8 @@ import axios from 'axios'
       ))}
     </ProductGrid>
   </Box>
-)
+
+)}
+      
 
 export default Products
