@@ -1,91 +1,121 @@
-import * as React from 'react'
-import products  from "../data"
-import {useLocation} from 'react-router-dom'
 import {
-  AspectRatio,
   Box,
-  HStack,
+  Flex,
   Image,
   Skeleton,
   Stack,
+  HStack,
   Text,
-  useBreakpointValue,
-  useColorModeValue,
-  Button
+    useColorModeValue,
 } from '@chakra-ui/react'
+import * as React from 'react'
+import products  from "../data"
+import {useLocation} from 'react-router-dom'
 import { Rating } from '../components/Products/Rating'
-import  FavoriteButton  from '../components/Products/FavoriteButton'
-import { Link } from 'react-router-dom'
+
 
 const Servicespage = () => {
-
-  //Getting location of the product that was clicked
-  const location = useLocation()
-
-  //Let's declare a variable named path and set it to location.pathname.split("/")[1]
-  //We will put it into an array and the get the id which wwill be the 3 item with and index of [2]
-  const path = location.pathname.split("/")[2]
+ 
+const location = useLocation()
+const path = location.pathname.split("/")[2]
+const product = products.find(p => p.id.toString() === path)
 
 
-  const product = products.find(p => p.id.toString() === path)
-  return (
-    <div className="content">
-   <Stack
-      spacing={useBreakpointValue({
-        base: '2',
-        md: '3',
-      })}
-      
-    > 
-     <Box position="relative">
-        <AspectRatio ratio={4 / 3}>
-       
-          <Image
-            src={product.image}
-            alt={product.name}
-            draggable="false"
-            fallback={<Skeleton />}
-            borderRadius={useBreakpointValue({
-              base: 'md',
-              md: 'xl',
-            })}
-            objectFit="cover"
-          />
-        </AspectRatio>
-       <FavoriteButton
-          position="absolute"
-          top="4"
-          right="4"
-          aria-label={`Add ${product.name} to your favourites`}
-        />
-      </Box>
-      <Stack>
-        <Stack spacing="1">
-          <Text fontWeight="md" fontSize="md" color={"gray"}>
-            {product.name}
-          </Text>
-          {product.price}
-        </Stack>
-        <HStack>
-          <Text fontSize="xl" color={"black"} fontWeight="bold">
-            ${product.price} 
-          </Text>
-        </HStack>
-         <HStack>
+
+
+ return (
+    <Box
+    maxW="7xl"
+    mx="auto"
+    px={{
+      base: '0',
+      lg: '12',
+    }}
+    py={{
+      base: '0',
+      lg: '12',
+    }}
+  >
+    <Stack
+      direction={{
+        base: 'column-reverse',
+        lg: 'row',
+      }}
+      spacing={{
+        base: '0',
+        lg: '20',
+      }}
+    >
+      <Box
+        width={{
+          lg: 'sm',
+        }}
+        transform={{
+          base: 'translateY(-50%)',
+          lg: 'none',
+        }}
+        bg={{
+          base: useColorModeValue('gray.50', 'gray.700'),
+          lg: 'transparent',
+        }}
+        mx={{
+          base: '6',
+          md: '8',
+          lg: '0',
+        }}
+        px={{
+          base: '6',
+          md: '8',
+          lg: '0',
+        }}
+        py={{
+          base: '6',
+          md: '8',
+          lg: '12',
+        }}
+      >
+        <Stack
+          spacing={{
+            base: '8',
+            lg: '10',
+          }}
+        >
+          <Stack
+            spacing={{
+              base: '2',
+              lg: '4',
+            }}
+          >
+            <h1 size="xl" color={"black"} className="hero-heading">
+              {product.name}
+            </h1>
+            <p size="xl" fontWeight="normal" className="hero-paragraph">
+              {product.rating}
+            </p>
+          </Stack>
+          <HStack>
           <Rating defaultValue={product.rating} size="sm" />
           <Text fontSize="sm" color={useColorModeValue('gray.600', 'gray.400') }>
             ({product.numberOfReviews} reviews)
           </Text>
-          
         </HStack>
-         <Button>Book Now</Button>
         </Stack>
-      </Stack>
-     </div>
-     
-
-    
-  )
-}
-
+      </Box>
+      <Flex flex="1" overflow="hidden">
+        <Image
+          src={product.image}
+          alt="Lovely Image"
+          fallback={<Skeleton />}
+          maxH="450px"
+          minW="300px"
+          objectFit="cover"
+          flex="1"
+          borderRadius="15"
+          />
+         </Flex>
+    </Stack>
+  </Box>
+)};
+  
+  
 export default Servicespage
