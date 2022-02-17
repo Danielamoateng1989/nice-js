@@ -3,6 +3,8 @@ import * as React from 'react'
 import { ProductCard } from './ProductCard'
 import  products  from '../../data'
 import { ProductGrid } from './ProductGrid'
+import axios from 'axios'
+
 
  const Products = () => (
   <Box
