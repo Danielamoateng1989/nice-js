@@ -111,7 +111,7 @@ const product = products.find(p => p.id.toString() === path)
           </Text> 
           </HStack>
         <HStack />
-        <Button>Book Now</Button>
+        <Button onClick={() => console.log('I was clicked')}>Book Now</Button>
         </Stack>  
          
        </Stack>
