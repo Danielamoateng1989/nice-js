@@ -9,12 +9,12 @@ const Button = styled.button`
   font-size: 1em;
   margin: 1em;
   color: white;
-  border-radius: 4px;
+  border-radius: 20px;
   background-color: #E41E53;
   font-weight: bold;
   height: 30px;
   width: 120px;
-  box-shadow: 3px 4px 10px red
+  box-shadow: 1px 2px 2px red
     
 `
 const Navbar = () => {

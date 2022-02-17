@@ -18,12 +18,12 @@ const Button = styled.button`
   font-size: 1em;
   margin: 1em;
   color: white;
-  border-radius: 5px;
+  border-radius: 20px;
   background-color: #E41E53;
   font-weight: bold;
   height: 40px;
   width: 120px;
-  box-shadow: 3px 3px 6px red;
+  box-shadow: 1px 2px 3px red;
     
 `
 const Servicespage = () => {
