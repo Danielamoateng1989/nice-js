@@ -13,7 +13,6 @@ app.get('/api/services', (req, res) => {
 
 //Fetching a single service
 app.get('/api/services/:id', (req, res) => {
-
  const product = products.find(p => p.id === Number(req.params.id))
    res.send(product)
 })
