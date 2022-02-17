@@ -2,6 +2,7 @@ import {
   Box,
   Flex,
   Image,
+  Button,
   Skeleton,
   Stack,
   HStack,
@@ -90,16 +91,18 @@ const product = products.find(p => p.id.toString() === path)
               {product.name}
             </h1>
             <p size="xl" fontWeight="normal" className="hero-paragraph">
-              {product.rating}
+              ${product.price}
             </p>
-          </Stack>
           <HStack>
           <Rating defaultValue={product.rating} size="sm" />
           <Text fontSize="sm" color={useColorModeValue('gray.600', 'gray.400') }>
             ({product.numberOfReviews} reviews)
-          </Text>
-        </HStack>
-        </Stack>
+          </Text> 
+          </HStack>
+        <HStack />
+        </Stack>  
+       </Stack>
+      <Button>Book Now</Button>
       </Box>
       <Flex flex="1" overflow="hidden">
         <Image
@@ -110,10 +113,11 @@ const product = products.find(p => p.id.toString() === path)
           minW="300px"
           objectFit="cover"
           flex="1"
-          borderRadius="15"
+          borderRadius="1"
           />
          </Flex>
     </Stack>
+ 
   </Box>
 )};
   
