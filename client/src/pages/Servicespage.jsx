@@ -12,8 +12,20 @@ import * as React from 'react'
 import products  from "../data"
 import {useLocation} from 'react-router-dom'
 import { Rating } from '../components/Products/Rating'
+import styled from 'styled-components'
 
-
+const Button = styled.button`
+  font-size: 1em;
+  margin: 1em;
+  color: white;
+  border-radius: 5px;
+  background-color: #E41E53;
+  font-weight: bold;
+  height: 40px;
+  width: 120px;
+  box-shadow: 3px 3px 6px red;
+    
+`
 const Servicespage = () => {
  
 const location = useLocation()
@@ -90,16 +102,20 @@ const product = products.find(p => p.id.toString() === path)
               {product.name}
             </h1>
             <p size="xl" fontWeight="normal" className="hero-paragraph">
-              {product.rating}
+              ${product.price}
             </p>
-          </Stack>
           <HStack>
           <Rating defaultValue={product.rating} size="sm" />
           <Text fontSize="sm" color={useColorModeValue('gray.600', 'gray.400') }>
             ({product.numberOfReviews} reviews)
-          </Text>
-        </HStack>
-        </Stack>
+          </Text> 
+          </HStack>
+        <HStack />
+        <Button onClick={() => console.log('I was clicked')}>Book Now</Button>
+        </Stack>  
+         
+       </Stack>
+     
       </Box>
       <Flex flex="1" overflow="hidden">
         <Image
@@ -110,10 +126,11 @@ const product = products.find(p => p.id.toString() === path)
           minW="300px"
           objectFit="cover"
           flex="1"
-          borderRadius="15"
+          borderRadius="1"
           />
          </Flex>
     </Stack>
+ 
   </Box>
 )};
   

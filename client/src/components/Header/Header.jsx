@@ -13,7 +13,7 @@ const Button = styled.button`
   background-color: #E41E53;
   font-weight: bold;
   height: 30px;
-  width: 90px;
+  width: 120px;
   box-shadow: 3px 4px 10px red
     
 `

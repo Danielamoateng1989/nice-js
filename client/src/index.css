@@ -18,7 +18,7 @@ Global Styles
 }
 
 main {
-  min-height: 85vh;
+  min-height: 70vh;
   
 }
 
@@ -138,8 +138,6 @@ nav {
   padding: 0.5rem 1rem;
   transition: all 0.3s linear;
   font-family: 'Montserrat', sans-serif;
-  
-  
 
 }
 .links a:hover {
