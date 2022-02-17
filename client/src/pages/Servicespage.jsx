@@ -2,7 +2,6 @@ import {
   Box,
   Flex,
   Image,
-  Button,
   Skeleton,
   Stack,
   HStack,
@@ -15,8 +14,18 @@ import {useLocation} from 'react-router-dom'
 import { Rating } from '../components/Products/Rating'
 import styled from 'styled-components'
 
-
-
+const Button = styled.button`
+  font-size: 1em;
+  margin: 1em;
+  color: white;
+  border-radius: 5px;
+  background-color: #E41E53;
+  font-weight: bold;
+  height: 40px;
+  width: 120px;
+  box-shadow: 3px 3px 6px red;
+    
+`
 const Servicespage = () => {
  
 const location = useLocation()
@@ -102,9 +111,11 @@ const product = products.find(p => p.id.toString() === path)
           </Text> 
           </HStack>
         <HStack />
+        <Button>Book Now</Button>
         </Stack>  
+         
        </Stack>
-      <Button>Book Now</Button>
+     
       </Box>
       <Flex flex="1" overflow="hidden">
         <Image
