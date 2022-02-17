@@ -8,9 +8,7 @@ import axios from 'axios'
  const Products = () => {
   
   const [products, setProducts] = useState([])
-
-
-
+  
   const fetchServices = () => {
 
      axios.get('http://127.0.0.1:5000/api/services')
