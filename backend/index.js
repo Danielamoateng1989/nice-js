@@ -4,6 +4,7 @@ import products from './data/data.js'
 
 
 app.use(express.json());
+app.use(cors())
 
 //Fetching all services
 app.get('/api/services', (req, res) => {
