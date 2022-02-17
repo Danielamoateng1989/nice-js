@@ -1,18 +1,31 @@
 import { Box } from '@chakra-ui/react'
 import  React, {useState, useEffect} from 'react'
 import { ProductCard } from './ProductCard'
-import  products  from '../../data'
 import { ProductGrid } from './ProductGrid'
 import axios from 'axios'
 
 
  const Products = () => {
-   
-  const [products, setProducts] = useState([])
   
+  const [products, setProducts] = useState([])
 
 
 
+  const fetchServices = () => {
+
+     axios.get('http://127.0.0.1:5000/api/services')
+      .then((response) => {
+        const services = response.data
+        setProducts(services)
+      })
+
+  }
+  
+  useEffect(() => {
+
+   fetchServices()  
+  }, [])
+  
   return(
   <Box
     maxW="7xl"
