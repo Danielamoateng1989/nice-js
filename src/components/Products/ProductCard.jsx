@@ -9,18 +9,20 @@ import {
   useBreakpointValue,
   useColorModeValue,
 } from '@chakra-ui/react'
-import * as React from 'react'
 import { Rating } from './Rating'
 import  FavoriteButton  from './FavoriteButton'
 import {Link} from 'react-router-dom'
 
+
+
 export const ProductCard = (props) => {
-  const { product, rootProps } = props
-  const { name, image, price, rating, numberOfReviews  } = product
+  const {rootProps } = props
+
+
   
-  return (
+return (
     <div className="content">
-    <Link to={`/service/${product.id}`}>
+    
     <Stack
       spacing={useBreakpointValue({
         base: '2',
@@ -29,11 +31,14 @@ export const ProductCard = (props) => {
       {...rootProps}
     >
       <Box position="relative">
+        
+        <Link to={`/services/${props.product._id}`}>
         <AspectRatio ratio={4 / 3}>
-       
+         
           <Image
-            src={image}
-            alt={name}
+            src={props.product.image}
+            alt={props.product.name}
+            cursor="pointer"
             draggable="false"
             fallback={<Skeleton />}
             borderRadius={useBreakpointValue({
@@ -42,35 +47,37 @@ export const ProductCard = (props) => {
             })}
             objectFit="cover"
           />
+          
         </AspectRatio>
+        </Link>
        <FavoriteButton
           position="absolute"
           top="4"
           right="4"
-          aria-label={`Add ${name} to your favourites`}
+          aria-label={`Add ${props.product.name} to your favourites`}
         />
       </Box>
       <Stack>
         <Stack spacing="1">
           <Text fontWeight="md" fontSize="md" color={"gray"}>
-            {name}
+            {props.product.name}
           </Text>
-          {price}
+          {props.product.price}
         </Stack>
         <HStack>
           <Text fontSize="xl" color={"black"} fontWeight="bold">
-            ${price} 
+            ${props.product.price} 
           </Text>
         </HStack>
          <HStack>
-          <Rating defaultValue={rating} size="sm" />
+          <Rating defaultValue={props.product.rating} size="sm" />
           <Text fontSize="sm" color={useColorModeValue('gray.600', 'gray.400') }>
-            ({numberOfReviews} reviews)
+            ({props.product.numberOfReviews} 9 reviews)
           </Text>
         </HStack>
       </Stack>
     </Stack>
-    </Link>
+    
     </div>
   )
 }

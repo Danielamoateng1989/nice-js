@@ -15,6 +15,9 @@ import axios from 'axios'
       .then((response) => {
         const services = response.data
         setProducts(services)
+
+
+        console
       })
 
   }
@@ -40,11 +43,16 @@ import axios from 'axios'
       lg: '12',
     }}
   >
+   
+   
     <ProductGrid>
+     
       {products.map((product) => (
-        <ProductCard key={product.id} product={product} />
+        <ProductCard key={product._id} product={product} />
       ))}
+      
     </ProductGrid>
+  
   </Box>
 
 )}

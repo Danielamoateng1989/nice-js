@@ -9,34 +9,48 @@ import {
     useColorModeValue,
 } from '@chakra-ui/react'
 import  React, {useState, useEffect} from 'react'
-import products  from "../data"
-import {useLocation} from 'react-router-dom'
 import { Rating } from '../components/Products/Rating'
 import styled from 'styled-components'
 import axios from 'axios'
+import {useParams, Link} from 'react-router-dom'
 
 const Button = styled.button`
   font-size: 1em;
   margin: 1em;
   color: white;
-  border-radius: 20px;
-  background-color: #E41E53;
-  font-weight: bold;
+  border-radius: 2px;
+  background-color: #000;
+  font-weight: bolder;
   height: 40px;
-  width: 120px;
-  box-shadow: 1px 2px 3px red;
+  width: 160px;
+  &:hover {
+    background-color: #E41E53;
+  }
+  
     
 `
 const Servicespage = () => {
 
+const [service, setService] = useState({})
+
+//Gives us the id in the params
+const {id} = useParams()
+
+  const fetchServices = async () => {
+   
+    //Fetching a single service from the database
+    const {data} = await axios.get(`http://127.0.0.1:5000/api/services/${id}`)
+     
+    setService(data)
+    
+  }
   
- 
-const location = useLocation()
-const path = location.pathname.split("/")[2]
-const product = products.find(p => p.id.toString() === path)
-
-
-
+  useEffect(() => {
+   
+    fetchServices()  
+  
+  }, [id])
+  
 
  return (
     <Box
@@ -51,6 +65,11 @@ const product = products.find(p => p.id.toString() === path)
       lg: '12',
     }}
   >
+    <Link to="/">
+    <button type="button"
+     className="back-btn"
+    >Go back</button>
+    </Link>
     <Stack
       direction={{
         base: 'column-reverse',
@@ -89,6 +108,7 @@ const product = products.find(p => p.id.toString() === path)
           lg: '12',
         }}
       >
+        
         <Stack
           spacing={{
             base: '8',
@@ -101,16 +121,18 @@ const product = products.find(p => p.id.toString() === path)
               lg: '4',
             }}
           >
+            
             <h1 size="xl" color={"black"} className="hero-heading">
-              {product.name}
+              {service.name}
             </h1>
             <p size="xl" fontWeight="normal" className="hero-paragraph">
-              ${product.price}
+              ${service.price}
             </p>
           <HStack>
-          <Rating defaultValue={product.rating} size="sm" />
+          <Rating defaultValue={service.rating} size="sm" />
+           {service.rating} 
           <Text fontSize="sm" color={useColorModeValue('gray.600', 'gray.400') }>
-            ({product.numberOfReviews} reviews)
+            ({service.numberOfReviews} reviews)
           </Text> 
           </HStack>
         <HStack />
@@ -122,7 +144,7 @@ const product = products.find(p => p.id.toString() === path)
       </Box>
       <Flex flex="1" overflow="hidden">
         <Image
-          src={product.image}
+          src={service.image}
           alt="Lovely Image"
           fallback={<Skeleton />}
           maxH="450px"

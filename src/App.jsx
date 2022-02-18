@@ -9,6 +9,7 @@ import {
   Link
 } from "react-router-dom";
 import Servicespage from './pages/Servicespage'
+import { Login } from './components/Login/Login';
 
 const App = () => {
   return (
@@ -17,8 +18,11 @@ const App = () => {
      <Header />
      <main>
           <Routes>
+           <Route path="/login" element={<Login />}/>
            <Route path="/" element={<Homepage />} exact/>
-           <Route path="/service/:id" element={<Servicespage />}/>
+           
+           <Route path="/services/:id" element={<Servicespage />}/>
+           
           </Routes>
      </main>
      <Footer />
