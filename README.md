@@ -2,20 +2,13 @@
 
 Book an appointment with a professional from nice.com and receive a hair, nails, makeup services at the comfort of your home
 
-## Test the application
-
-Download this docker image and you call run the app on your local environment for testing.
-
-```bash
-docker run node-docker
-```
 
 ## Usage
+To run the applcation on your local environment
 
-``` curl --request POST \
-  --url http://localhost:8000/test \
-  --header 'content-type: application/json' \
-  --data '{"msg": "testing"}'
+npm start
+``` 
+http://localhost:5000
 ```
 
 ## Contributing
