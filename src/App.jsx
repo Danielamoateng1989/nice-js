@@ -10,6 +10,7 @@ import {
 } from "react-router-dom";
 import Servicespage from './pages/Servicespage'
 import { Login } from './components/Login/Login';
+import DateTimePicker from './components/DateTimePicker/dateTimePicker';
 
 const App = () => {
   return (
@@ -20,9 +21,8 @@ const App = () => {
           <Routes>
            <Route path="/login" element={<Login />}/>
            <Route path="/" element={<Homepage />} exact/>
-           
            <Route path="/services/:id" element={<Servicespage />}/>
-           
+           <Route path="/dateandtime" element={<DateTimePicker />}/>
           </Routes>
      </main>
      <Footer />
