@@ -21,6 +21,8 @@ const Button = styled.button`
 `
 const Navbar = () => {
 const [showLinks, setShowLinks] = useState(false)
+
+const username = "Daniel Amoateng"
 return (
   
    <nav>
@@ -36,8 +38,16 @@ return (
 
     <div className={ `${showLinks ? 'links-container show-container' : 'links-container'} `}>
      
-     <div className="user-avatar">
-      <FaUserCircle />
+    <div className="user-container">
+      
+      <div className="user-avatar">
+      <FaUserCircle  />
+      </div>
+     
+      <div className="user-name">
+      <p className="user-name">{username}</p>
+      </div>
+      
     </div>
     
     </div>
