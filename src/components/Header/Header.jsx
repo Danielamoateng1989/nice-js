@@ -52,7 +52,7 @@ return (
       
     </div>
     <Link to="/login">
-    <Button>Login</Button>
+    <Button>Logout</Button>
     </Link>
     </div>
 </nav>  
