@@ -20,9 +20,10 @@ export const ProductCard = (props) => {
 
 
   
+
+
 return (
     <div className="content">
-    
     <Stack
       spacing={useBreakpointValue({
         base: '2',
@@ -72,12 +73,13 @@ return (
          <HStack>
           <Rating defaultValue={props.product.rating} size="sm" />
           <Text fontSize="sm" color={useColorModeValue('gray.600', 'gray.400') }>
-            ({props.product.numberOfReviews} 9 reviews)
+            ({props.product.numberOfReviews} reviews)
           </Text>
         </HStack>
       </Stack>
     </Stack>
     
     </div>
+          
   )
 }
