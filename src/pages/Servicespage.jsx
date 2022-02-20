@@ -14,6 +14,7 @@ import styled from 'styled-components'
 import axios from 'axios'
 import {useParams, Link} from 'react-router-dom'
 import {useAuth0} from '@auth0/auth0-react'
+import { useNavigate } from "react-router-dom"
 
 const Button = styled.button`
   font-size: 1em;
@@ -34,6 +35,7 @@ const Servicespage = () => {
 
 const {isLoading, loginWithRedirect, logout, user, isAuthenticated} = useAuth0()
 
+let navigate = useNavigate()
 
 const [service, setService] = useState({})
 
@@ -140,7 +142,7 @@ const {id} = useParams()
           </Text> 
           </HStack>
         <HStack />
-        <Button onClick={loginWithRedirect}>Book Now</Button>
+        <Button onClick={()=> navigate('/dateandtime')}>Book Now</Button>
         </Stack>  
          
        </Stack>
