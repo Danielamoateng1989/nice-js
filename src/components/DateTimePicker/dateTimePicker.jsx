@@ -2,7 +2,9 @@ import React from 'react'
 
 const dateTimePicker = () => {
   return (
-    <div>Pick a Date and Time</div>
+    <div>
+        <h1>Add a date and time picker</h1>
+    </div>
   )
 }
 
