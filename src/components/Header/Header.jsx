@@ -36,9 +36,9 @@ return (
 
     <div className={ `${showLinks ? 'links-container show-container' : 'links-container'} `}>
      
-     <div className="user">
+     <div className="user-avatar">
       <FaUserCircle />
-      </div>
+    </div>
     
     </div>
     <Link to="/login">  

@@ -15,12 +15,6 @@ import axios from 'axios'
 import {useParams, Link} from 'react-router-dom'
 import {useAuth0} from '@auth0/auth0-react'
 
-
-
-
-
-
-
 const Button = styled.button`
   font-size: 1em;
   margin: 1em;
@@ -146,7 +140,7 @@ const {id} = useParams()
           </Text> 
           </HStack>
         <HStack />
-        <Button onClick={() => console.log('I was clicked')}>Book Now</Button>
+        <Button onClick={loginWithRedirect}>Book Now</Button>
         </Stack>  
          
        </Stack>

@@ -129,7 +129,7 @@ nav {
   transform: rotate(90deg);
 }
 
-.links a {
+/* .links a {
   color: #222222;
   font-size: 0.9rem;
   text-transform: capitalize;
@@ -139,7 +139,7 @@ nav {
   transition: all 0.3s linear;
   font-family: 'Montserrat', sans-serif;
 
-}
+} */
 .links a:hover {
   background: rgb(255, 255, 255);
 }
@@ -151,7 +151,7 @@ nav {
   transition: var(--transition);
 }
 .show-container {
-  height: 15rem;
+  height: 3rem;
   background: #ffffff;
 }
 @media screen and (min-width: 800px) {
@@ -203,6 +203,7 @@ nav {
 
 .logo {
   height: 40px;
+  margin-right: 10px;
 }
 
 /*Footer */
@@ -241,3 +242,8 @@ span{
   margin: 0.5rem;
 }
 
+.user-avatar {
+  font-size: 2.5rem;
+  margin-left: 1rem;
+  color: #D1D1D1
+}
