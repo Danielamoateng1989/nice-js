@@ -13,6 +13,13 @@ import { Rating } from '../components/Products/Rating'
 import styled from 'styled-components'
 import axios from 'axios'
 import {useParams, Link} from 'react-router-dom'
+import {useAuth0} from '@auth0/auth0-react'
+
+
+
+
+
+
 
 const Button = styled.button`
   font-size: 1em;
