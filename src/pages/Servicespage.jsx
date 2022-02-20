@@ -38,6 +38,9 @@ const Button = styled.button`
 `
 const Servicespage = () => {
 
+const {isLoading, loginWithRedirect, logout, user, isAuthenticated} = useAuth0()
+
+
 const [service, setService] = useState({})
 
 //Gives us the id in the params
