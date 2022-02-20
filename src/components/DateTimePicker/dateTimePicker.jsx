@@ -1,8 +1,14 @@
+import React, { useState } from 'react';
+import DateTimePicker from 'react-datetime-picker';
 
-
-export default function BasicDateTimePicker() {
+const PickDateAndTime = () => {
+  const [value, onChange] = useState(new Date());
 
   return (
-   <h1>Data and Time Picker here</h1>
+    <div>
+      <DateTimePicker onChange={onChange} value={value} />
+    </div>
   );
 }
+
+export default PickDateAndTime
