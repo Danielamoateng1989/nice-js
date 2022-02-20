@@ -1,10 +1,10 @@
 import React, { useState} from 'react'
 import {FaBars} from 'react-icons/fa'
 import logo from '../../images/nice.png'
-import {links} from '../../navItems'
 import styled from 'styled-components'
 import {Link } from "react-router-dom"
 import { FaUserCircle } from 'react-icons/fa';
+import profileImage from '../../images/profile_image.jpg'
 
 
 const Button = styled.button`
@@ -41,7 +41,7 @@ return (
     <div className="user-container">
       
       <div className="user-avatar">
-      <FaUserCircle  />
+      <img style={{width: '100%', height: '100%', borderRadius: '50%'}}src={profileImage} alt="profile photo" />
       </div>
      
       <div className="user-name">

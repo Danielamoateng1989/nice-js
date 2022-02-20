@@ -246,6 +246,9 @@ span{
   font-size: 2.5rem;
   margin-left: 1rem;
   color: #c7c7c7;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
   
 }
 
