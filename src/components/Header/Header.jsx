@@ -4,6 +4,8 @@ import logo from '../../images/nice.png'
 import {links} from '../../navItems'
 import styled from 'styled-components'
 import {Link } from "react-router-dom"
+import { FaUserCircle } from 'react-icons/fa';
+
 
 const Button = styled.button`
   font-size: 1em;
@@ -34,26 +36,15 @@ return (
 
     <div className={ `${showLinks ? 'links-container show-container' : 'links-container'} `}>
      
-     <ul className="links">
-     {links.map(link => {
-         const {id, text,url} = link
-       
-          return (
-          <div key={id}>
-          <li>
-          <a href={url}> 
-              {text}
-            </a>
-          </li>
-          </div>
-          )
-       })} 
-      </ul>
-      
+     <div className="user">
+      <FaUserCircle />
+      </div>
+    
     </div>
-    <Link to="/login">
+    <Link to="/login">  
     <Button>Logout</Button>
     </Link>
+    
     </div>
 </nav>  
 
